@@ -4,6 +4,7 @@ public class Rama implements Comparable<Rama> {
 	private float prob = 0;
 	private String bits;
 	private String senial;
+	private int ocurrencia;
 	private Rama izq;
 	private Rama der;
 	public Rama(Rama izq, Rama der) {
@@ -31,6 +32,12 @@ public class Rama implements Comparable<Rama> {
 	}
 	public void setSenial(String senial) {
 		this.senial = senial;
+	}
+	public int getOcurrencia() {
+		return ocurrencia;
+	}
+	public void setOcurrencia(int ocurrencia) {
+		this.ocurrencia = ocurrencia;
 	}
 	
 	public void calculoBits(String bits) {

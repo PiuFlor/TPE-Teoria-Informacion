@@ -18,7 +18,7 @@ public class Huffman {
 		arbol.add( r);
 	}
 	arbol.get(0).calculoBits("");
-	System.out.println(hojas.get(0).getBits());
+	//System.out.println(hojas.get(0).getBits());
 	return hojas;
 	
 }
@@ -29,6 +29,7 @@ public class Huffman {
 			Rama h = new Rama(null, null);
 			h.setProb(listaSeniales.get(i).getProb());
 			h.setSenial(listaSeniales.get(i).getSenial());
+			h.setOcurrencia(listaSeniales.get(i).getExitos());
 			hojas.add(h);
 		}
 		Collections.sort(hojas);

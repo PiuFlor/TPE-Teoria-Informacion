@@ -74,7 +74,7 @@ public class Media {
 		}
 		media = suma/cantidad;
 
-		System.out.println("medi: " + media);
+		System.out.println("media: " + media);
 		double divisor = 0;
 		for (int i=0; i < cantidad; i++) {
 			try {
@@ -87,14 +87,12 @@ public class Media {
 			}
 			senial = toDouble(seniales);
 			divisor+= (senial - media) * (senial - media);
-			System.out.println("divisor: " + divisor);
+			//System.out.println("divisor: " + divisor);
 		}
-		System.out.println("divisor: " + divisor);
-		System.out.println("cantidad: " + cantidad);
+		//System.out.println("divisor: " + divisor);
+		//System.out.println("cantidad: " + cantidad);
 		desvioEstandar = Math.sqrt(divisor/cantidad);
 		return desvioEstandar;
-		
-		
 	}
 	public static Double toDouble(String s) {
 	    return Double.parseDouble(s);
